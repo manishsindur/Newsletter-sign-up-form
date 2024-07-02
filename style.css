@@ -84,6 +84,10 @@ form {
 		background-color: var(--Dark_Slate_Grey);
 		color: var(--White);
 		border-style: none;
+		cursor: pointer;
+	}
+	& #subscribe_button:hover {
+		background-color: tomato;
 	}
 }
 
