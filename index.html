@@ -21,9 +21,9 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<main>
+		<div id="card">
 			<!-- Hero Image -->
-			<picture id="image">
+			<picture id="image" class="hidden">
 				<!-- 1. Order of
 				<source />
 				elements: The order of the
@@ -56,8 +56,8 @@
 			</picture>
 
 			<!-- Sign-up form start -->
-			<section id="content">
-				<article>
+			<div id="content">
+				<div class="hidden">
 					<h1>Stay updated!</h1>
 					<p class="font_size">
 						Join 60,000+ product managers receiving monthly updates on:
@@ -67,8 +67,8 @@
 						<li>Measuring to ensure updates are a success</li>
 						<li>And much more!</li>
 					</ul>
-				</article>
-				<form action="#">
+				</div>
+				<form action="#" class="hidden">
 					<div>
 						<label for="email">Email address</label>
 						<input id="email" type="email" placeholder="email@company.com" />
@@ -79,21 +79,27 @@
 						value="Subscribe to monthly newsletter"
 					/>
 				</form>
-			</section>
+			</div>
 
 			<!-- Sign-up form end -->
-
-			<!-- Success message start -->
-			<section id="success_message">
+		</div>
+		<!-- Success message start -->
+		<div id="success_message">
+			<div id="message_text_section">
+				<img
+					id="icon_success"
+					src="images/icon-success.svg"
+					alt="icon-success"
+				/>
 				<h2>Thanks for subscribing!</h2>
 				<p>
 					A confirmation email has been sent to
 					<span>ash@loremcompany.com</span>. Please open it and click the button
 					inside to confirm your subscription.
 				</p>
-				<button>Dismiss message</button>
-			</section>
-			<!-- Success message end -->
-		</main>
+			</div>
+			<button>Dismiss message</button>
+		</div>
+		<!-- Success message end -->
 	</body>
 </html>
