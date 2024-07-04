@@ -36,6 +36,11 @@ html {
 	}
 }
 
+#content {
+	width: 85vw;
+	margin: 20px auto;
+}
+
 h1 {
 	font-size: 2.6rem;
 	margin-bottom: 16px;
@@ -63,12 +68,6 @@ li::before {
 	position: absolute;
 	left: 0;
 	content: "";
-}
-
-#content {
-	display: grid;
-	gap: 20px;
-	margin: 20px;
 }
 
 form {
