@@ -12,6 +12,16 @@
 	--White: hsl(0, 0%, 100%);
 }
 
+/* Reusable Classes */
+.hidden {
+	display: block;
+}
+
+.font_size {
+	font-size: 16px;
+}
+
+/* Custom Style */
 body,
 html {
 	width: 100%;
@@ -28,10 +38,6 @@ html {
 h1 {
 	font-size: 2.6rem;
 	margin-bottom: 16px;
-}
-
-.font_size {
-	font-size: 16px;
 }
 
 p {
@@ -92,7 +98,7 @@ form {
 }
 
 @media screen and (min-width: 1024px) {
-	main {
+	#card {
 		display: grid;
 		grid-template-columns: 50% 50%;
 		align-items: center;
@@ -105,11 +111,27 @@ form {
 	#content {
 		order: 0;
 	}
-	#image {
+	picture {
 		order: 1;
 	}
-}
-
-#success_message {
-	display: none;
+	#success_message {
+		background-color: var(--White);
+		width: 300px;
+		height: 400px;
+		padding: 25px;
+		border-radius: 10px;
+		& h2 {
+			font-size: 38px;
+			margin-bottom: 12px;
+			line-height: 40px;
+		}
+		& p {
+			font-size: 11px;
+		}
+	}
+	#icon_success {
+		width: 3rem;
+		height: 3rem;
+		margin-bottom: 10px;
+	}
 }
