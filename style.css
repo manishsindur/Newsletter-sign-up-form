@@ -125,7 +125,11 @@ form {
 		border-radius: 30px;
 	}
 	#content {
+		display: grid;
+		gap: 10px;
 		order: 0;
+		width: 360px;
+		margin: auto;
 	}
 	picture {
 		order: 1;
