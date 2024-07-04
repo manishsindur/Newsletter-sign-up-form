@@ -24,35 +24,21 @@
 		<div id="card">
 			<!-- Hero Image -->
 			<picture id="image" class="hidden">
-				<!-- 1. Order of
-				<source />
-				elements: The order of the
-				<source />
-				elements is important. The browser will check the
-				<source />
-				elements in the order they appear in the HTML, and use the first one
-				whose media condition matches the current viewport. 
-
-				2. The condition
-				(min-width: 375px) would match both mobile and desktop screens, since
-				1024px is greater than 375px. This meant that the mobile image
-				<source />
-				would always be selected, even on larger screens, because it appeared
-				first in the HTML. -->
+				<source
+					id="mobile_img"
+					media="(max-width: 1024px)"
+					srcset="/images/illustration-sign-up-mobile.svg"
+					width="100%"
+					type="image/svg+xml"
+				/>
 				<source
 					id="desktop_img"
 					media="(min-width: 1024px)"
 					srcset="/images/illustration-sign-up-desktop.svg"
 					type="image/svg+xml"
 				/>
-				<source
-					id="mobile_img"
-					media="(min-width: 375px)"
-					srcset="/images/illustration-sign-up-mobile.svg"
-					width="100%"
-					type="image/svg+xml"
-				/>
-				<img src="images/illustration-sign-up-mobile.svg" alt="backup" />
+
+				<img src="images/icon-success.svg" alt="backup" />
 			</picture>
 
 			<!-- Sign-up form start -->
