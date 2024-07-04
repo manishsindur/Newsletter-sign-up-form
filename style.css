@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 
+/* Colors */
 :root {
 	--Tomato: hsl(4, 100%, 67%);
 	--Dark_Slate_Grey: hsl(234, 29%, 20%);
@@ -111,6 +112,7 @@ form {
 	}
 }
 
+/* Desktop Style */
 @media screen and (min-width: 1024px) {
 	#card {
 		display: grid;
