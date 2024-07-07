@@ -123,6 +123,18 @@ form {
 	}
 }
 
+#dismiss_button {
+	color: var(--White);
+	background-color: var(--Dark_Slate_Grey);
+	cursor: pointer;
+	border-width: 0;
+	border-radius: 10px;
+}
+
+#dismiss_button:hover {
+	background-color: var(--Tomato);
+}
+
 /* Desktop Style */
 @media screen and (min-width: 1024px) {
 	#card {
