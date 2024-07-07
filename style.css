@@ -164,6 +164,16 @@ form {
 		height: 310px;
 		padding: 25px;
 		border-radius: 10px;
+		& #message_text_section {
+			display: block;
+			& h2 {
+				font-size: 38px;
+				margin-bottom: 12px;
+				line-height: 40px;
+			}
+			& p {
+				font-size: 11px;
+			}
 		}
 	}
 	#icon_success {
